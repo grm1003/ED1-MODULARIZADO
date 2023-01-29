@@ -9,7 +9,11 @@ void mostracardapio(cardapio a)
 void mostrapedido(pessoa a)
 
 void escreverPessoa(FILE *arq, pessoa a)
+
 void lerArquivo(FILE *arq)
+
 pessoa *criapessoa(char nome[20],int *pedido)
+
 pilha *criarPChoco()
+
 void pagamento(fila *f,pilha *p,FILE *arq)
