@@ -1,0 +1,233 @@
+Guilherme Martins de Oliviera 12121bsi202
+Gabriel Rezende Machado 12121bsi217
+Kaue Gomes de Carvalho 12121bsi262
+
+
+//fila vazia
+
+int main(){
+
+    
+    FILE *a;
+    a = fopen("pedidos.dat", "wb+");
+    if (a == NULL){
+            printf("Erro no arquivo\n");
+    }
+
+
+    pilha *pilha = criarPChoco();
+ 
+
+    //criando os pedidos
+    int z[5] = {0,2,2,8,9};
+    int f[5] ={0,4,3,7,5};
+    int g[5] ={2,9,8,7,6};
+
+    //criando as pessoas
+    pessoa *gabriel = criapessoa("Gabriel",g);
+    pessoa *carlos = criapessoa("Carlos",z);
+    pessoa *ana = criapessoa("Ana",f);
+    pessoa *guilherme = criapessoa("Guilherme",f);
+    pessoa *kaue = criapessoa("Kaue",g);
+
+    //inserindo as pessoas na fila
+    fila *fila = criarF();
+
+    //pessoas pagando e saindo do restaurante
+    pagamento(fila,pilha,a);
+    lerArquivo(a);
+
+
+
+
+    return 0;
+}
+
+
+//-----------------------------------------------------
+
+//fila Cheia
+
+int main(){
+
+   
+    FILE *a;
+    a = fopen("pedidos.dat", "wb+");
+    if (a == NULL){
+            printf("Erro no arquivo\n");
+    }
+
+
+    pilha *pilha = criarPChoco();
+
+    //criando os pedidos
+    int z[5] = {0,2,2,8,9};
+    int f[5] ={0,4,3,7,5};
+    int g[5] ={2,9,8,7,6};
+    int d[5] = {0,2,3,9,6};
+    int h[5] = {7,8,2,6,4};
+    int i[5] = {9,1,2,3,4};
+    int k[5] = {5,2,7,8,1};
+
+    //criando as pessoas
+    pessoa *gabriel = criapessoa("Gabriel",g);
+    pessoa *carlos = criapessoa("Carlos",z);
+    pessoa *ana = criapessoa("Ana",f);
+    pessoa *guilherme = criapessoa("Guilherme",h);
+    pessoa *matheus= criapessoa("Matheus",d);
+    pessoa *henrique = criapessoa("Henrique",d);
+    pessoa *amanda = criapessoa("Amanda",z);
+    pessoa *murilo = criapessoa("Murilo",k);
+    pessoa *cleber= criapessoa("Cleber",h);
+    pessoa *renata = criapessoa("Renata",i);
+
+
+    //inserindo as pessoas na fila
+    fila *fila = criarF();
+    insereF(fila,*carlos);
+    insereF(fila,*ana);
+    insereF(fila,*gabriel);
+    insereF(fila,*guilherme);
+    insereF(fila,*matheus);
+    insereF(fila,*henrique);
+    insereF(fila,*amanda);
+    insereF(fila,*murilo);
+    insereF(fila,*cleber);
+    insereF(fila,*renata);
+   
+
+    //pessoas pagando e saindo do restaurante
+    pagamento(fila,pilha,a);
+    lerArquivo(a);
+
+
+
+
+    return 0;
+}
+
+//------------------------------------------------------
+
+Pilha Vazia
+
+
+int main(){
+
+    
+    FILE *a;
+    a = fopen("pedidos.dat", "wb+");
+    if (a == NULL){
+            printf("Erro no arquivo\n");
+    }
+
+
+    pilha *pilha = criarP();
+
+    //criando os pedidos
+    int z[5] = {0,2,2,8,9};
+    int f[5] ={0,4,3,7,5};
+    int g[5] ={2,9,8,7,6};
+    int d[5] = {0,2,3,9,6};
+    int h[5] = {7,8,2,6,4};
+    int i[5] = {9,1,2,3,4};
+    int k[5] = {5,2,7,8,1};
+
+    //criando as pessoas
+    pessoa *gabriel = criapessoa("Gabriel",g);
+    pessoa *carlos = criapessoa("Carlos",z);
+    pessoa *ana = criapessoa("Ana",f);
+    pessoa *guilherme = criapessoa("Guilherme",h);
+    pessoa *matheus= criapessoa("Matheus",d);
+    pessoa *henrique = criapessoa("Henrique",d);
+    pessoa *amanda = criapessoa("Amanda",z);
+    pessoa *murilo = criapessoa("Murilo",k);
+    pessoa *cleber= criapessoa("Cleber",h);
+    pessoa *renata = criapessoa("Renata",i);
+    
+
+
+    //inserindo as pessoas na fila
+    fila *fila = criarF();
+    insereF(fila,*carlos);
+    insereF(fila,*ana);
+    insereF(fila,*gabriel);
+    insereF(fila,*guilherme);
+    insereF(fila,*matheus);
+    insereF(fila,*henrique);
+    insereF(fila,*amanda);
+    insereF(fila,*murilo);
+    insereF(fila,*cleber);
+    insereF(fila,*renata);
+    
+
+    //pessoas pagando e saindo do restaurante
+    pagamento(fila,pilha,a);
+    lerArquivo(a);
+
+
+
+
+    return 0;
+}
+-------------------------------------------------------
+Fila estourada e Pilha cheia
+
+int main(){
+
+   
+    FILE *a;
+    a = fopen("pedidos.dat", "wb+");
+    if (a == NULL){
+            printf("Erro no arquivo\n");
+    }
+
+
+    pilha *pilha = criarPChoco();
+
+    //criando os pedidos
+    int z[5] = {0,2,2,8,9};
+    int f[5] ={0,4,3,7,5};
+    int g[5] ={2,9,8,7,6};
+    int d[5] = {0,2,3,9,6};
+    int h[5] = {7,8,2,6,4};
+    int i[5] = {9,1,2,3,4};
+    int k[5] = {5,2,7,8,1};
+
+    //criando as pessoas
+    pessoa *gabriel = criapessoa("Gabriel",g);
+    pessoa *carlos = criapessoa("Carlos",z);
+    pessoa *ana = criapessoa("Ana",f);
+    pessoa *guilherme = criapessoa("Guilherme",h);
+    pessoa *matheus= criapessoa("Matheus",d);
+    pessoa *henrique = criapessoa("Henrique",d);
+    pessoa *amanda = criapessoa("Amanda",z);
+    pessoa *murilo = criapessoa("Murilo",k);
+    pessoa *cleber= criapessoa("Cleber",h);
+    pessoa *renata = criapessoa("Renata",i);
+    pessoa *clara = criapessoa("Clara",i);
+
+
+    //inserindo as pessoas na fila
+    fila *fila = criarF();
+    insereF(fila,*carlos);
+    insereF(fila,*ana);
+    insereF(fila,*gabriel);
+    insereF(fila,*guilherme);
+    insereF(fila,*matheus);
+    insereF(fila,*henrique);
+    insereF(fila,*amanda);
+    insereF(fila,*murilo);
+    insereF(fila,*cleber);
+    insereF(fila,*renata);
+    //erro, não vai inserir
+    insereF(fila,*clara);
+
+    //pessoas pagando e saindo do restaurante
+    pagamento(fila,pilha,a);
+    lerArquivo(a);
+
+
+
+
+    return 0;
+}
